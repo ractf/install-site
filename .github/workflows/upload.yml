@@ -12,6 +12,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      
+    - name: Make directory
+      run: mkdir build
 
     - name: Rename file
       run: mv install.sh build/index.html

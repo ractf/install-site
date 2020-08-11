@@ -14,4 +14,4 @@ FILE=$(mktemp)
 curl -SsL $LOCATION > $FILE
 chmod +x $FILE
 
-$FILE
+sh -c $FILE
